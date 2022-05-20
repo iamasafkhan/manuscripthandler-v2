@@ -12,7 +12,6 @@ class CreateMhSmsAuthorCopyrightTable extends Migration
 
             $table->id();
             $table->string('pdffile');
-          //  $table->foreign('userID')->references('id')->on('mh_esubmit_profiles')->onDelete('cascade');
             $table->timestamps();
         });
     }

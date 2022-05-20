@@ -11,7 +11,7 @@ class CreateMhSmsKeywordsTable extends Migration
         Schema::create('mh_sms_keywords', function (Blueprint $table) {
 
             $table->id();
-            $table->integer('userID');
+            $table->unsignedBigInteger('userID');
             $table->integer('manuscriptID');
             $table->string('keywords');
             $table->datetime('entryDate');

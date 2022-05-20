@@ -12,7 +12,7 @@ class CreateMhSmsPdfcontentTable extends Migration
 
             $table->id();
 
-            $table->integer('userID');;;
+            $table->unsignedBigInteger('userID');;;
             $table->string('meta_content_file');
             $table->string('meta_table_file');
             $table->string('orderNumber');

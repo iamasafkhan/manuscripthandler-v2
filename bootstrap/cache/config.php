@@ -1,16 +1,16 @@
 <?php return array (
   'app' => 
   array (
-    'name' => 'MANUSCRIPTHANDLER',
+    'name' => 'Laravel',
     'env' => 'local',
     'debug' => true,
-    'url' => 'http://localhost',
+    'url' => 'http://manuscripthandler.test',
     'asset_url' => NULL,
     'timezone' => 'UTC',
     'locale' => 'en',
     'fallback_locale' => 'en',
     'faker_locale' => 'en_US',
-    'key' => 'base64:WXoDqVuRra7ENRe2MD2iAD9ts0Kdg24IAOeZIMLgQ2Y=',
+    'key' => 'base64:Zwc1OBZofmZupWQwHay2U4zowokl3g4bNx1NrXeBJYI=',
     'cipher' => 'AES-256-CBC',
     'maintenance' => 
     array (
@@ -208,7 +208,7 @@
       'file' => 
       array (
         'driver' => 'file',
-        'path' => 'D:\\xampp\\htdocs\\projects\\manuscripthandler-v2\\storage\\framework/cache/data',
+        'path' => 'C:\\xampp\\htdocs\\projects\\manuscripthandler-v2\\storage\\framework/cache/data',
       ),
       'memcached' => 
       array (
@@ -252,7 +252,7 @@
         'driver' => 'octane',
       ),
     ),
-    'prefix' => 'manuscripthandler_cache_',
+    'prefix' => 'laravel_cache_',
   ),
   'cors' => 
   array (
@@ -351,7 +351,7 @@
       'options' => 
       array (
         'cluster' => 'redis',
-        'prefix' => 'manuscripthandler_database_',
+        'prefix' => 'laravel_database_',
       ),
       'default' => 
       array (
@@ -381,14 +381,14 @@
       'local' => 
       array (
         'driver' => 'local',
-        'root' => 'D:\\xampp\\htdocs\\projects\\manuscripthandler-v2\\storage\\app',
+        'root' => 'C:\\xampp\\htdocs\\projects\\manuscripthandler-v2\\storage\\app',
         'throw' => false,
       ),
       'public' => 
       array (
         'driver' => 'local',
-        'root' => 'D:\\xampp\\htdocs\\projects\\manuscripthandler-v2\\storage\\app/public',
-        'url' => 'http://localhost/storage',
+        'root' => 'C:\\xampp\\htdocs\\projects\\manuscripthandler-v2\\storage\\app/public',
+        'url' => 'http://manuscripthandler.test/storage',
         'visibility' => 'public',
         'throw' => false,
       ),
@@ -407,7 +407,7 @@
     ),
     'links' => 
     array (
-      'D:\\xampp\\htdocs\\projects\\manuscripthandler-v2\\public\\storage' => 'D:\\xampp\\htdocs\\projects\\manuscripthandler-v2\\storage\\app/public',
+      'C:\\xampp\\htdocs\\projects\\manuscripthandler-v2\\public\\storage' => 'C:\\xampp\\htdocs\\projects\\manuscripthandler-v2\\storage\\app/public',
     ),
   ),
   'hashing' => 
@@ -446,13 +446,13 @@
       'single' => 
       array (
         'driver' => 'single',
-        'path' => 'D:\\xampp\\htdocs\\projects\\manuscripthandler-v2\\storage\\logs/laravel.log',
+        'path' => 'C:\\xampp\\htdocs\\projects\\manuscripthandler-v2\\storage\\logs/laravel.log',
         'level' => 'debug',
       ),
       'daily' => 
       array (
         'driver' => 'daily',
-        'path' => 'D:\\xampp\\htdocs\\projects\\manuscripthandler-v2\\storage\\logs/laravel.log',
+        'path' => 'C:\\xampp\\htdocs\\projects\\manuscripthandler-v2\\storage\\logs/laravel.log',
         'level' => 'debug',
         'days' => 14,
       ),
@@ -504,7 +504,7 @@
       ),
       'emergency' => 
       array (
-        'path' => 'D:\\xampp\\htdocs\\projects\\manuscripthandler-v2\\storage\\logs/laravel.log',
+        'path' => 'C:\\xampp\\htdocs\\projects\\manuscripthandler-v2\\storage\\logs/laravel.log',
       ),
     ),
   ),
@@ -516,11 +516,11 @@
       'smtp' => 
       array (
         'transport' => 'smtp',
-        'host' => 'smtp.gmail.com',
-        'port' => '465',
-        'encryption' => 'ssl',
-        'username' => 'shahidkhaan.uom@gmail.com',
-        'password' => 'juvquzdlonooclqd',
+        'host' => 'mailhog',
+        'port' => '1025',
+        'encryption' => NULL,
+        'username' => NULL,
+        'password' => NULL,
         'timeout' => NULL,
         'local_domain' => NULL,
       ),
@@ -571,15 +571,15 @@
     ),
     'from' => 
     array (
-      'address' => 'shahidkhaan.uom@gmail.com',
-      'name' => '${Manuscripthandler}',
+      'address' => 'hello@example.com',
+      'name' => 'Laravel',
     ),
     'markdown' => 
     array (
       'theme' => 'default',
       'paths' => 
       array (
-        0 => 'D:\\xampp\\htdocs\\projects\\manuscripthandler-v2\\resources\\views/vendor/mail',
+        0 => 'C:\\xampp\\htdocs\\projects\\manuscripthandler-v2\\resources\\views/vendor/mail',
       ),
     ),
   ),
@@ -646,7 +646,7 @@
       2 => '127.0.0.1',
       3 => '127.0.0.1:8000',
       4 => '::1',
-      5 => 'localhost',
+      5 => 'manuscripthandler.test',
     ),
     'guard' => 
     array (
@@ -685,7 +685,7 @@
     'lifetime' => '120',
     'expire_on_close' => false,
     'encrypt' => false,
-    'files' => 'D:\\xampp\\htdocs\\projects\\manuscripthandler-v2\\storage\\framework/sessions',
+    'files' => 'C:\\xampp\\htdocs\\projects\\manuscripthandler-v2\\storage\\framework/sessions',
     'connection' => NULL,
     'table' => 'sessions',
     'store' => NULL,
@@ -694,7 +694,7 @@
       0 => 2,
       1 => 100,
     ),
-    'cookie' => 'manuscripthandler_session',
+    'cookie' => 'laravel_session',
     'path' => '/',
     'domain' => NULL,
     'secure' => NULL,
@@ -705,9 +705,48 @@
   array (
     'paths' => 
     array (
-      0 => 'D:\\xampp\\htdocs\\projects\\manuscripthandler-v2\\resources\\views',
+      0 => 'C:\\xampp\\htdocs\\projects\\manuscripthandler-v2\\resources\\views',
     ),
-    'compiled' => 'D:\\xampp\\htdocs\\projects\\manuscripthandler-v2\\storage\\framework\\views',
+    'compiled' => 'C:\\xampp\\htdocs\\projects\\manuscripthandler-v2\\storage\\framework\\views',
+  ),
+  'livewire' => 
+  array (
+    'class_namespace' => 'App\\Http\\Livewire',
+    'view_path' => 'C:\\xampp\\htdocs\\projects\\manuscripthandler-v2\\resources\\views/livewire',
+    'layout' => 'layouts.app',
+    'asset_url' => NULL,
+    'app_url' => NULL,
+    'middleware_group' => 'web',
+    'temporary_file_upload' => 
+    array (
+      'disk' => NULL,
+      'rules' => NULL,
+      'directory' => NULL,
+      'middleware' => NULL,
+      'preview_mimes' => 
+      array (
+        0 => 'png',
+        1 => 'gif',
+        2 => 'bmp',
+        3 => 'svg',
+        4 => 'wav',
+        5 => 'mp4',
+        6 => 'mov',
+        7 => 'avi',
+        8 => 'wmv',
+        9 => 'mp3',
+        10 => 'm4a',
+        11 => 'jpg',
+        12 => 'jpeg',
+        13 => 'mpga',
+        14 => 'webp',
+        15 => 'wma',
+      ),
+      'max_upload_time' => 5,
+    ),
+    'manifest_path' => NULL,
+    'back_button_cache' => false,
+    'render_on_redirect' => false,
   ),
   'flare' => 
   array (
@@ -780,7 +819,7 @@
     array (
     ),
     'enable_runnable_solutions' => true,
-    'remote_sites_path' => 'D:\\xampp\\htdocs\\projects\\manuscripthandler-v2',
+    'remote_sites_path' => 'C:\\xampp\\htdocs\\projects\\manuscripthandler-v2',
     'local_sites_path' => '',
     'housekeeping_endpoint_prefix' => '_ignition',
     'settings_file_path' => '',

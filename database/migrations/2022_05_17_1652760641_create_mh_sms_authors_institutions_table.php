@@ -11,7 +11,7 @@ class CreateMhSmsAuthorsInstitutionsTable extends Migration
 		Schema::create('mh_sms_authors_institutions', function (Blueprint $table) {
 
 			$table->id();
-			$table->integer('userID');
+			$table->unsignedBigInteger('userID');
 			$table->integer('manuscriptID');
 			$table->string('authSequence');
 			$table->string('authTitle');

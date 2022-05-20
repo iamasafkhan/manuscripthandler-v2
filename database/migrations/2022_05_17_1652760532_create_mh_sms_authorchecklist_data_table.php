@@ -12,8 +12,8 @@ class CreateMhSmsAuthorchecklistDataTable extends Migration
 
 			$table->id();
 			$table->integer('checklistID');
-			$table->integer('userID');
-			$table->integer('journalID');
+			$table->unsignedBigInteger('userID');
+			$table->unsignedBigInteger('journalID');
 			$table->enum('agree', ['Agree', 'Disagree']);
 			$table->enum('conflictOfinterest', ['Yes', 'No']);
 			$table->string('clarifyStatement');

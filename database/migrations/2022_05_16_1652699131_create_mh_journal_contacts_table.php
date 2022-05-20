@@ -11,8 +11,8 @@ class CreateMhJournalContactsTable extends Migration
         Schema::create('mh_journal_contacts', function (Blueprint $table) {
 
             $table->id();
-            $table->integer('journalID');
-            $table->integer('profileID');
+            $table->unsignedBigInteger('journalID');
+            $table->unsignedBigInteger('profileID');
             $table->datetime('entryDate');
            // $table->foreign('journalID')->references('id')->on('mh_journals')->onDelete('cascade');
            // $table->foreign('profileID')->references('id')->on('mh_esubmit_profiles')->onDelete('cascade');

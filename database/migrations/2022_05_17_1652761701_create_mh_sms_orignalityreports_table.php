@@ -12,10 +12,9 @@ class CreateMhSmsOrignalityreportsTable extends Migration
 
             $table->id();
 
-		$table->integer('editorialID');
-		$table->integer('editorID');
-		$table->integer('journalID');
-		;
+		$table->unsignedBigInteger('editorialID');
+		$table->unsignedBigInteger('editorID');
+		$table->unsignedBigInteger('journalID');
 		$table->text('comments');
 		$table->string('orderNumber');
 		$table->datetime('entryDate');

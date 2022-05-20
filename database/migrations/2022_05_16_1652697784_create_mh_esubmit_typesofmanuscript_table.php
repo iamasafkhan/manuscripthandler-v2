@@ -11,7 +11,7 @@ class CreateMhEsubmitTypesofmanuscriptTable extends Migration
         Schema::create('mh_esubmit_typesofmanuscript', function (Blueprint $table) {
 
             $table->id();
-            $table->integer('journalID');
+            $table->unsignedBigInteger('journalID');
             $table->string('title');
             $table->datetime('entryDate');
             $table->tinyInteger('status');

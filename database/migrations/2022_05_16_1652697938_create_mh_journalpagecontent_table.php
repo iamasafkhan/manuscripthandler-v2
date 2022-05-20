@@ -11,7 +11,7 @@ class CreateMhJournalpagecontentTable extends Migration
 		Schema::create('mh_journalpagecontent', function (Blueprint $table) {
 
 			$table->id();
-			$table->integer('journalID');
+			$table->unsignedBigInteger('journalID');
 			$table->string('page_tab');
 			$table->string('page_title')->nullable();
 			$table->string('page_heading');

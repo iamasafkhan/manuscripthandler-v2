@@ -11,7 +11,7 @@ class CreateMhSmsCoverlettersTable extends Migration
         Schema::create('mh_sms_coverletters', function (Blueprint $table) {
 
             $table->id();
-            $table->integer('userID');
+            $table->unsignedBigInteger('userID');
             $table->integer('manuscriptID');
             $table->string('fileName');
             $table->datetime('entryDate');

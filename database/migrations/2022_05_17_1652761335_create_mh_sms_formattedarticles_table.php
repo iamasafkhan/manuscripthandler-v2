@@ -11,8 +11,8 @@ class CreateMhSmsFormattedarticlesTable extends Migration
         Schema::create('mh_sms_formattedarticles', function (Blueprint $table) {
 
 	    $table->id();
-		$table->integer('publisherID');
-		$table->integer('authorID');
+		$table->unsignedBigInteger('publisherID');
+		$table->unsignedBigInteger('authorID');
 		$table->string('formattedPDF');
 		$table->string('formattedPDF2');
 		$table->string('formattedPDF3');

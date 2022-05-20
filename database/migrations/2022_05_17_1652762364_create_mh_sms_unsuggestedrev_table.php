@@ -12,7 +12,7 @@ class CreateMhSmsUnsuggestedrevTable extends Migration
 
             $table->id();
 
-		$table->integer('userID');
+		$table->unsignedBigInteger('userID');
 		$table->integer('manuscriptID');
 		$table->string('recommendingName');
 		$table->string('recommendingEmail');

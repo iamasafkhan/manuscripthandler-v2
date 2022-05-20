@@ -11,11 +11,11 @@ class CreateMhSmsManuscriptreviewsTable extends Migration
 		Schema::create('mh_sms_manuscriptreviews', function (Blueprint $table) {
 
 			$table->id();
-			$table->integer('userID');
-			$table->integer('reviewerID');
-			$table->string('editorType');
-			$table->integer('editorID');
-			$table->integer('journalID');
+			$table->unsignedBigInteger('userID');
+			$table->unsignedBigInteger('reviewerID');
+			$table->integer('editorType');
+			$table->unsignedBigInteger('editorID');
+			$table->unsignedBigInteger('journalID');
 			$table->integer('pa_originality')->nullable();
 			$table->integer('pa_abstract')->nullable();
 			$table->integer('pa_introduction')->nullable();

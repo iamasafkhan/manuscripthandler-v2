@@ -11,7 +11,7 @@ class CreateMhSmsTypetitleabstractTable extends Migration
         Schema::create('mh_sms_typetitleabstract', function (Blueprint $table) {
 
             $table->id();
-            $table->integer('userID');
+            $table->unsignedBigInteger('userID');
             $table->integer('manuscriptID');
             $table->integer('typeOfManuScript');
             $table->integer('areaOfSpecificInterest');

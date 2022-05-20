@@ -13,10 +13,10 @@ class CreateMhReviewersFirstReminderTable extends Migration
             $table->id();
             $table->integer('recordID');
             $table->string('orderNumber');
-            $table->integer('journalID');
-            $table->integer('editorID');
+            $table->unsignedBigInteger('journalID');
+            $table->unsignedBigInteger('editorID');
             $table->string('editorEmailAddress');
-            $table->integer('reviewerID');
+            $table->unsignedBigInteger('reviewerID');
             $table->string('reviewerEmailAddress');
             $table->date('reminderDate');
             $table->tinyInteger('emailSent');

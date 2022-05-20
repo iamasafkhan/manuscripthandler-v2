@@ -12,8 +12,8 @@ class CreateRoleUserTable extends Migration
 
             $table->id();
 
-            $table->integer('role_id')->unsigned();
-            $table->enum('user_type', ['Admin', 'User']);
+            $table->unsignedBigInteger('role_id')->unsigned();
+            $table->string('user_type')->comment('Admin, User');
 
           //  $table->foreign('role_id')->references('id')->on('roles')->onDelete->onupdate('cascade');
         });

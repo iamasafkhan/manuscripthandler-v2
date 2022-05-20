@@ -11,11 +11,11 @@ class CreateMhManuscriptHistoryTable extends Migration
         Schema::create('mh_manuscript_history', function (Blueprint $table) {
 
             $table->id();
-            $table->string('orderNumber');
+            $table->unsignedBigInteger('orderNumber');
             $table->string('userType');
-            $table->integer('userID');
-            $table->integer('journalID');
-            $table->integer('companyID');
+            $table->unsignedBigInteger('userID');
+            $table->unsignedBigInteger('journalID');
+            $table->unsignedBigInteger('companyID');
             $table->string('manuscriptStatus');
             $table->string('historyDetails');
             $table->text('queryDetails');

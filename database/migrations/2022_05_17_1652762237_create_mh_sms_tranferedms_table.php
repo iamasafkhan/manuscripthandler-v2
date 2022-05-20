@@ -12,10 +12,10 @@ class CreateMhSmsTranferedmsTable extends Migration
 
             $table->id();
 
-            $table->integer('fromJournalID');
-            $table->integer('toJournalID');
-            $table->integer('oldUserID');
-            $table->integer('newUserID');
+            $table->unsignedBigInteger('fromJournalID');
+            $table->unsignedBigInteger('toJournalID');
+            $table->unsignedBigInteger('oldUserID');
+            $table->unsignedBigInteger('newUserID');
             $table->string('orderNumber');
             $table->datetime('entryDate');
 

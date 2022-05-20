@@ -11,7 +11,7 @@ class CreateMhJournalsChecklistTable extends Migration
         Schema::create('mh_journals_checklist', function (Blueprint $table) {
 
             $table->id();
-            $table->integer('journalID');
+            $table->unsignedBigInteger('journalID');
             $table->text('description');
             $table->datetime('entryDate');
             $table->tinyInteger('status')->default('1');

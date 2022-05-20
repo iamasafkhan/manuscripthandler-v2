@@ -12,9 +12,9 @@ class CreateMhEsubmitProfilesTable extends Migration
 
 			$table->id();
 			$table->integer('standingID');
-			$table->enum('userType', ['Author', 'Reviewer', 'Editor', 'Editorial Office', 'Associate Editor', 'Publisher', 'Editorial Board Member'])->default('Author');
-			$table->integer('companyID');
-			$table->integer('journalID');
+			$table->string('userType')->default('Author')->comment('Author, Reviewer, Editor, Editorial Office, Associate Editor, Publisher, Editorial Board Member');
+			$table->unsignedBigInteger('companyID');
+			$table->unsignedBigInteger('journalID');
 			$table->string('prefixType');
 			$table->string('firstName');
 			$table->string('middleName');

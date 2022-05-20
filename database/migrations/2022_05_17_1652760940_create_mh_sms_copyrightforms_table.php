@@ -11,7 +11,7 @@ class CreateMhSmsCopyrightformsTable extends Migration
         Schema::create('mh_sms_copyrightforms', function (Blueprint $table) {
 
             $table->id();
-            $table->integer('userID');
+            $table->unsignedBigInteger('userID');
             $table->integer('manuscriptID');
             $table->string('fileName');
             $table->datetime('entryDate');

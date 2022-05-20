@@ -12,7 +12,7 @@ class CreateMhSmsSelectedAssEditorsTable extends Migration
 
             $table->id();
 
-		$table->integer('assEditorID');
+		$table->unsignedBigInteger('assEditorID');
 		$table->string('firstName');
 		$table->string('emailAddress');
 		$table->string('orderNumber');

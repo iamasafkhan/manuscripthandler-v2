@@ -11,8 +11,8 @@ class CreateMhSmsAuthorchecklistTable extends Migration
 		Schema::create('mh_sms_authorchecklist', function (Blueprint $table) {
 
 			$table->id();
-			$table->integer('userID');
-			$table->integer('journalID');
+			$table->unsignedBigInteger('userID');
+			$table->unsignedBigInteger('journalID');
 			$table->enum('agree', ['Agree', 'Disagree']);
 			$table->enum('conflictOfinterest', ['Yes', 'No']);
 			$table->string('clarifyStatement');

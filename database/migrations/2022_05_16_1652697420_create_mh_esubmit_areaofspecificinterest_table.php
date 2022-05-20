@@ -11,7 +11,7 @@ class CreateMhEsubmitAreaofspecificinterestTable extends Migration
         Schema::create('mh_esubmit_areaofspecificinterest', function (Blueprint $table) {
 
         $table->id();
-		$table->integer('journalID');
+		$table->unsignedBigInteger('journalID');
 		$table->string('title');
 		$table->integer('specialIssue');
 		$table->datetime('entryDate');

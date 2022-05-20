@@ -11,8 +11,8 @@ class CreateMhSmsAuthorcommentsTable extends Migration
         Schema::create('mh_sms_authorcomments', function (Blueprint $table) {
 
             $table->id();
-            $table->integer('editorialID');
-            $table->integer('journalID');
+            $table->unsignedBigInteger('editorialID');
+            $table->unsignedBigInteger('journalID');
             $table->text('comments');
             $table->string('orderNumber');
             $table->datetime('entryDate');

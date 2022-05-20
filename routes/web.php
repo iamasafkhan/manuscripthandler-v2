@@ -15,32 +15,37 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Auth::routes(['verify' => true]);
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
+Route::get('/', [App\Http\Controllers\frontend\HomeController::class, 'index']);
+Route::get('/login', [App\Http\Controllers\frontend\LoginController::class, 'show_login'])->name('login');
+Route::post('/do-login', [App\Http\Controllers\frontend\LoginController::class, 'login'])->name('do-login');
+Route::get('/registration',[App\Http\Controllers\frontend\LoginController::class, 'show_register_form'])->name('show_register_form');
+Route::post('/do-register',[App\Http\Controllers\frontend\LoginController::class, 'register'])->name('do-register');
+Route::get('journals-using-mh', [\App\Http\Controllers\frontend\JournalsUsingMhController::class, 'index'])->name('journals-using-mh');
 
 
-Route::group(['prefix' => 'admin'], function () {
 
-    Route::group(['middleware' => 'admin.guest'], function () {
+// Auth::routes(['verify' => true]);
 
-        Route::view('login', 'admin.login')->name('admin.login');
-        Route::post('login', [App\Http\Controllers\AdminController::class, 'login'])->name('admin.auth');
-    });
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+
+// Route::group(['prefix' => 'admin'], function () {
+
+//     Route::group(['middleware' => 'admin.guest'], function () {
+
+//         Route::view('Login', 'admin.login')->name('admin.login');
+//         Route::post('Login', [App\Http\Controllers\AdminController::class, 'login'])->name('admin.auth');
+//     });
 
 
   
-    Route::group(['middleware' => 'admin.auth'], function () {
+//     Route::group(['middleware' => 'admin.auth'], function () {
 
-        Route::get('admin.home', [App\Http\Controllers\AdminController::class, 'adminhome'])->name('admin.home');
+//         Route::get('admin.home', [App\Http\Controllers\AdminController::class, 'adminhome'])->name('admin.home');
 
-   });
+//    });
      
-   Route::get('logout', [App\Http\Controllers\AdminController::class, 'logout'])->name('admin.logout');
+//    Route::get('logout', [App\Http\Controllers\AdminController::class, 'logout'])->name('admin.logout');
 
-});
+// });

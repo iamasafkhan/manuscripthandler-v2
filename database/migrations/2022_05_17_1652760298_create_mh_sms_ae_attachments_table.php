@@ -12,8 +12,8 @@ class CreateMhSmsAeAttachmentsTable extends Migration
 
             $table->id();
             $table->string('editorType');
-            $table->integer('editorID');
-            $table->integer('userID');
+            $table->unsignedBigInteger('editorID');
+            $table->unsignedBigInteger('userID');
             $table->string('attachment');
             $table->datetime('entryDate');
             $table->string('orderNumber');

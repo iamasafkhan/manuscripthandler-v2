@@ -12,8 +12,8 @@ class CreateMhSmsAedecisionsTable extends Migration
 
 			$table->id();
 			$table->string('editorType');
-			$table->integer('editorID');
-			$table->integer('userID');
+			$table->unsignedBigInteger('editorID');
+			$table->unsignedBigInteger('userID');
 			$table->string('attachment');
 			$table->string('emailFrom');
 			$table->string('emailTo');
