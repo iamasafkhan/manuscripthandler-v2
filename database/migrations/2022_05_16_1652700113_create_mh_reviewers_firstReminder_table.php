@@ -22,9 +22,9 @@ class CreateMhReviewersFirstReminderTable extends Migration
             $table->tinyInteger('emailSent');
             $table->datetime('entryDate');
             $table->datetime('sentDate');
-            // $table->foreign('journalID')->references('id')->on('mh_journals')->onDelete('cascade');
-            // $table->foreign('editorID')->references('id')->on('mh_esubmit_profiles')->onDelete('cascade');
-            // $table->foreign('reviewerID')->references('id')->on('mh_esubmit_profiles')->onDelete('cascade');
+            $table->foreign('journalID')->references('id')->on('mh_journals')->onDelete('cascade');
+            $table->foreign('editorID')->references('id')->on('mh_esubmit_profiles')->onDelete('cascade');
+            $table->foreign('reviewerID')->references('id')->on('mh_esubmit_profiles')->onDelete('cascade');
 
             $table->timestamps();
         });

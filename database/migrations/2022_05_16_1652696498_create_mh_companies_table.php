@@ -19,7 +19,7 @@ class CreateMhCompaniesTable extends Migration
 		$table->string('companyWebsite');
 		$table->text('companyAddress');
 		$table->string('companyLogo');
-		$table->string('companyDescription');
+		$table->text('companyDescription');
 		$table->datetime('entryDate');
 		$table->tinyInteger('companyDisplayStatus')->default('0');
 		$table->tinyInteger('companyStatus');

@@ -13,10 +13,13 @@ class CreateMhPagecontentTable extends Migration
 			$table->id();
 			$table->string('page_title')->nullable();
 			$table->string('page_heading');
-			$table->string('page_subheading');;;
+			$table->string('page_subheading');
+			$table->longText('meta_keyword');
+			$table->longText('meta_phrase');
 			$table->string('page_url');
 			$table->string('page_image');
-			$table->string('page_thumbimage');;
+			$table->string('page_thumbimage');
+			$table->longText('meta_description');
 			$table->string('page_type')->nullable();
 			$table->integer('entry_by');
 			$table->datetime('entry_date');

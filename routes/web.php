@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\frontend\JournalsUsingMhController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -15,12 +16,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', [App\Http\Controllers\frontend\HomeController::class, 'index']);
-Route::get('/login', [App\Http\Controllers\frontend\LoginController::class, 'show_login'])->name('login');
-Route::post('/do-login', [App\Http\Controllers\frontend\LoginController::class, 'login'])->name('do-login');
-Route::get('/registration',[App\Http\Controllers\frontend\LoginController::class, 'show_register_form'])->name('show_register_form');
+Route::get('/', [App\Http\Controllers\frontend\HomeController::class, 'index'])->name('home');
+Route::get('/journals-using-mh', [\App\Http\Controllers\frontend\JournalsUsingMhController::class, 'index'])->name('journals-using-mh');
+Route::get('/{companName}/{seo}/esubmit-registraion',[App\Http\Controllers\frontend\LoginController::class, 'show_register_form'])->name('show_register_form');
 Route::post('/do-register',[App\Http\Controllers\frontend\LoginController::class, 'register'])->name('do-register');
-Route::get('journals-using-mh', [\App\Http\Controllers\frontend\JournalsUsingMhController::class, 'index'])->name('journals-using-mh');
+Route::get('/{company}/{seo}', [App\Http\Controllers\frontend\LoginController::class, 'show_login'])->name('login');
+Route::post('/do-login', [App\Http\Controllers\frontend\LoginController::class, 'login'])->name('do-login');
+
+// Route::middleware('auth')->group(function(){
+
+   Route::get('/home', [App\Http\Controllers\frontend\FrontendDashboardController::class, 'index'])->name('dashboard-home');
+
+// });
+// Route::get('/submit-online', [\App\Http\Controllers\frontend\JournalsUsingMhController::class, 'submit_online'])->name('submit-online');
 
 
 

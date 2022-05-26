@@ -24,7 +24,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::Vq71v6T0WMY6Ls18',
+            '_route' => 'generated::ApRwKIT2iFa6CME2',
           ),
           1 => NULL,
           2 => 
@@ -63,7 +63,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::t6TjpXEE72LMnRta',
+            '_route' => 'generated::B2vl5fEtp2EW6mtV',
           ),
           1 => NULL,
           2 => 
@@ -83,7 +83,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::QRPmJnTHGEyYEu29',
+            '_route' => 'generated::2VGRLpfSD7VDbpwU',
           ),
           1 => NULL,
           2 => 
@@ -161,7 +161,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::zK53PjvJiQJIX49N',
+            '_route' => 'generated::ndDVTrGhl6ZNXkme',
           ),
           1 => NULL,
           2 => 
@@ -181,7 +181,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::Wuzu1kozDPOJU886',
+            '_route' => 'home',
           ),
           1 => NULL,
           2 => 
@@ -195,52 +195,13 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/login' => 
+      '/journals-using-mh' => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'login',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/do-login' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'do-login',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'POST' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/registration' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'show_register_form',
+            '_route' => 'journals-using-mh',
           ),
           1 => NULL,
           2 => 
@@ -273,13 +234,32 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/journals-using-mh' => 
+      '/do-login' => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'journals-using-mh',
+            '_route' => 'do-login',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/home' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'dashboard-home',
           ),
           1 => NULL,
           2 => 
@@ -296,7 +276,7 @@ app('router')->setCompiledRoutes(
     ),
     2 => 
     array (
-      0 => '{^(?|/livewire/(?|message/([^/]++)(*:36)|preview\\-file/([^/]++)(*:65)))/?$}sDu',
+      0 => '{^(?|/livewire/(?|message/([^/]++)(*:36)|preview\\-file/([^/]++)(*:65))|/([^/]++)/([^/]++)(?|/esubmit\\-registraion(*:115)|(*:123)))/?$}sDu',
     ),
     3 => 
     array (
@@ -344,6 +324,54 @@ app('router')->setCompiledRoutes(
           5 => true,
           6 => NULL,
         ),
+      ),
+      115 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'show_register_form',
+          ),
+          1 => 
+          array (
+            0 => 'companName',
+            1 => 'seo',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      123 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'login',
+          ),
+          1 => 
+          array (
+            0 => 'company',
+            1 => 'seo',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
         1 => 
         array (
           0 => NULL,
@@ -360,7 +388,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::Vq71v6T0WMY6Ls18' => 
+    'generated::ApRwKIT2iFa6CME2' => 
     array (
       'methods' => 
       array (
@@ -381,7 +409,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 'web',
         ),
-        'as' => 'generated::Vq71v6T0WMY6Ls18',
+        'as' => 'generated::ApRwKIT2iFa6CME2',
       ),
       'fallback' => false,
       'defaults' => 
@@ -491,7 +519,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::t6TjpXEE72LMnRta' => 
+    'generated::B2vl5fEtp2EW6mtV' => 
     array (
       'methods' => 
       array (
@@ -503,7 +531,7 @@ app('router')->setCompiledRoutes(
       array (
         'uses' => 'Livewire\\Controllers\\LivewireJavaScriptAssets@source',
         'controller' => 'Livewire\\Controllers\\LivewireJavaScriptAssets@source',
-        'as' => 'generated::t6TjpXEE72LMnRta',
+        'as' => 'generated::B2vl5fEtp2EW6mtV',
       ),
       'fallback' => false,
       'defaults' => 
@@ -519,7 +547,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::QRPmJnTHGEyYEu29' => 
+    'generated::2VGRLpfSD7VDbpwU' => 
     array (
       'methods' => 
       array (
@@ -531,7 +559,7 @@ app('router')->setCompiledRoutes(
       array (
         'uses' => 'Livewire\\Controllers\\LivewireJavaScriptAssets@maps',
         'controller' => 'Livewire\\Controllers\\LivewireJavaScriptAssets@maps',
-        'as' => 'generated::QRPmJnTHGEyYEu29',
+        'as' => 'generated::2VGRLpfSD7VDbpwU',
       ),
       'fallback' => false,
       'defaults' => 
@@ -656,7 +684,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::zK53PjvJiQJIX49N' => 
+    'generated::ndDVTrGhl6ZNXkme' => 
     array (
       'methods' => 
       array (
@@ -673,13 +701,13 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:47:"Laravel\\SerializableClosure\\SerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Signed":2:{s:12:"serializable";s:295:"O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:77:"function (\\Illuminate\\Http\\Request $request) {
     return $request->user();
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"000000004a306b3100000000446d0b67";}";s:4:"hash";s:44:"KvnuJrOzvU7QTzY3XKG2EHAsNlAhFowgBkxW0D6jaBA=";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000018dd8f9d0000000003301114";}";s:4:"hash";s:44:"O/VLdHMPzrqqNYTwr++bo0oszh3EL2CEDNfJjt694Ho=";}}',
         'namespace' => NULL,
         'prefix' => 'api',
         'where' => 
         array (
         ),
-        'as' => 'generated::zK53PjvJiQJIX49N',
+        'as' => 'generated::ndDVTrGhl6ZNXkme',
       ),
       'fallback' => false,
       'defaults' => 
@@ -695,7 +723,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::Wuzu1kozDPOJU886' => 
+    'home' => 
     array (
       'methods' => 
       array (
@@ -716,7 +744,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::Wuzu1kozDPOJU886',
+        'as' => 'home',
       ),
       'fallback' => false,
       'defaults' => 
@@ -732,64 +760,28 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'login' => 
+    'journals-using-mh' => 
     array (
       'methods' => 
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
-      'uri' => 'login',
+      'uri' => 'journals-using-mh',
       'action' => 
       array (
         'middleware' => 
         array (
           0 => 'web',
         ),
-        'uses' => 'App\\Http\\Controllers\\frontend\\LoginController@show_login',
-        'controller' => 'App\\Http\\Controllers\\frontend\\LoginController@show_login',
+        'uses' => 'App\\Http\\Controllers\\frontend\\JournalsUsingMhController@index',
+        'controller' => 'App\\Http\\Controllers\\frontend\\JournalsUsingMhController@index',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'login',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'do-login' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'POST',
-      ),
-      'uri' => 'do-login',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-        ),
-        'uses' => 'App\\Http\\Controllers\\frontend\\LoginController@login',
-        'controller' => 'App\\Http\\Controllers\\frontend\\LoginController@login',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'do-login',
+        'as' => 'journals-using-mh',
       ),
       'fallback' => false,
       'defaults' => 
@@ -812,7 +804,7 @@ app('router')->setCompiledRoutes(
         0 => 'GET',
         1 => 'HEAD',
       ),
-      'uri' => 'registration',
+      'uri' => '{companName}/{seo}/esubmit-registraion',
       'action' => 
       array (
         'middleware' => 
@@ -878,28 +870,101 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'journals-using-mh' => 
+    'login' => 
     array (
       'methods' => 
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
-      'uri' => 'journals-using-mh',
+      'uri' => '{company}/{seo}',
       'action' => 
       array (
         'middleware' => 
         array (
           0 => 'web',
         ),
-        'uses' => 'App\\Http\\Controllers\\frontend\\JournalsUsingMhController@index',
-        'controller' => 'App\\Http\\Controllers\\frontend\\JournalsUsingMhController@index',
+        'uses' => 'App\\Http\\Controllers\\frontend\\LoginController@show_login',
+        'controller' => 'App\\Http\\Controllers\\frontend\\LoginController@show_login',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'journals-using-mh',
+        'as' => 'login',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'do-login' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'do-login',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\frontend\\LoginController@login',
+        'controller' => 'App\\Http\\Controllers\\frontend\\LoginController@login',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'do-login',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'dashboard-home' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'home',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\frontend\\FrontendDashboardController@index',
+        'controller' => 'App\\Http\\Controllers\\frontend\\FrontendDashboardController@index',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'dashboard-home',
       ),
       'fallback' => false,
       'defaults' => 

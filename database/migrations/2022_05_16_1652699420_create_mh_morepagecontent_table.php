@@ -17,7 +17,10 @@ class CreateMhMorepagecontentTable extends Migration
 			$table->string('page_heading');
 			$table->string('page_subheading');
 			$table->string('page_url');
+			$table->longText('meta_keyword');
+			$table->longText('meta_phrase');
 			$table->string('page_image');
+			$table->longText('meta_description');
 			$table->string('page_type')->nullable();
 			$table->integer('entry_by');
 			$table->datetime('entry_date');

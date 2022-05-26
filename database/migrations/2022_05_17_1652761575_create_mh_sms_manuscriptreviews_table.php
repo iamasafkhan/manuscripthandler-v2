@@ -52,10 +52,10 @@ class CreateMhSmsManuscriptreviewsTable extends Migration
 			$table->datetime('entryDate');
 
 
-			// $table->foreign('userID')->references('id')->on('mh_esubmit_profiles')->onDelete('cascade');
-			// $table->foreign('reviewerID')->references('id')->on('mh_esubmit_profiles')->onDelete('cascade');
-			// $table->foreign('editorID')->references('id')->on('mh_esubmit_profiles')->onDelete('cascade');
-			// $table->foreign('journalID')->references('id')->on('mh_journals')->onDelete('cascade');
+			$table->foreign('userID')->references('id')->on('mh_esubmit_profiles')->onDelete('cascade');
+			$table->foreign('reviewerID')->references('id')->on('mh_esubmit_profiles')->onDelete('cascade');
+			$table->foreign('editorID')->references('id')->on('mh_esubmit_profiles')->onDelete('cascade');
+			$table->foreign('journalID')->references('id')->on('mh_journals')->onDelete('cascade');
 			
 			$table->timestamps();
 		});

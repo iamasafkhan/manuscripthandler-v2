@@ -21,7 +21,7 @@ class CreateMhSmsFilesuploadTable extends Migration
 		$table->string('orderNumber');
 		$table->integer('orderNo');
 
-      //  $table->foreign('userID')->references('id')->on('mh_esubmit_profiles')->onDelete('cascade');
+        $table->foreign('userID')->references('id')->on('mh_esubmit_profiles')->onDelete('cascade');
         $table->timestamps();
         
         });

@@ -11,6 +11,8 @@ class CreateMhSmsCitationTable extends Migration
         Schema::create('mh_sms_citation', function (Blueprint $table) {
 
             $table->id();
+            $table->tinyText('orderNumber');
+            $table->tinyText('citationLink');
             $table->text('citationDescription');
             $table->datetime('entryDate');
             $table->timestamps();

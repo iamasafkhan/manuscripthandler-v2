@@ -17,8 +17,8 @@ class CreateMhSmsAeAttachmentsTable extends Migration
             $table->string('attachment');
             $table->datetime('entryDate');
             $table->string('orderNumber');
-          //  $table->foreign('editorID')->references('id')->on('mh_esubmit_profiles')->onDelete('cascade');
-           // $table->foreign('userID')->references('id')->on('mh_esubmit_profiles')->onDelete('cascade');
+            $table->foreign('editorID')->references('id')->on('mh_esubmit_profiles')->onDelete('cascade');
+            $table->foreign('userID')->references('id')->on('mh_esubmit_profiles')->onDelete('cascade');
             $table->timestamps();
         });
     }

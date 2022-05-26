@@ -23,7 +23,7 @@ class CreateMhSmsAuthorsInstitutionsTable extends Migration
 			$table->string('authCorresponding');
 			$table->datetime('entryDate');
 			$table->string('orderNumber');
-			//$table->foreign('userID')->references('id')->on('mh_esubmit_profiles')->onDelete('cascade');
+			$table->foreign('userID')->references('id')->on('mh_esubmit_profiles')->onDelete('cascade');
 			$table->timestamps();
 		});
 	}

@@ -19,10 +19,10 @@ class CreateMhSmsTranferedmsTable extends Migration
             $table->string('orderNumber');
             $table->datetime('entryDate');
 
-            // $table->foreign('fromJournalID')->references('id')->on('mh_journals')->onDelete('cascade');
-            // $table->foreign('toJournalID')->references('id')->on('mh_journals')->onDelete('cascade');
-            // $table->foreign('oldUserID')->references('id')->on('mh_esubmit_profiles')->onDelete('cascade');
-            // $table->foreign('newUserID')->references('id')->on('mh_esubmit_profiles')->onDelete('cascade');
+            $table->foreign('fromJournalID')->references('id')->on('mh_journals')->onDelete('cascade');
+            $table->foreign('toJournalID')->references('id')->on('mh_journals')->onDelete('cascade');
+            $table->foreign('oldUserID')->references('id')->on('mh_esubmit_profiles')->onDelete('cascade');
+            $table->foreign('newUserID')->references('id')->on('mh_esubmit_profiles')->onDelete('cascade');
            
             $table->timestamps();
         });

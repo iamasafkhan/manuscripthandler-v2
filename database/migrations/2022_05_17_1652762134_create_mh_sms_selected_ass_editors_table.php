@@ -20,9 +20,7 @@ class CreateMhSmsSelectedAssEditorsTable extends Migration
 		$table->enum('role',['Waiting','Accepted','Declined']);
 		$table->datetime('roledated');
 		$table->tinyInteger('status');
-
-
-       // $table->foreign('assEditorID')->references('id')->on('mh_esubmit_profiles')->onDelete('cascade');
+        $table->foreign('assEditorID')->references('id')->on('mh_esubmit_profiles')->onDelete('cascade');
         $table->timestamps();
         
         });

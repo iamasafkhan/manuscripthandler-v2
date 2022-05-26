@@ -25,7 +25,7 @@ class CreateMhReviewersRemindersTable extends Migration
 			$table->datetime('entryDate');
 			$table->tinyInteger('emailsend');
 			$table->datetime('sendingDate');
-			//$table->foreign('editorID')->references('id')->on('mh_esubmit_profiles')->onDelete('cascade');
+			$table->foreign('editorID')->references('id')->on('mh_esubmit_profiles')->onDelete('cascade');
 			$table->timestamps();
 		});
 	}

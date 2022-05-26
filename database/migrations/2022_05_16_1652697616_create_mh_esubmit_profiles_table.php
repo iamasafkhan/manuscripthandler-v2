@@ -36,8 +36,8 @@ class CreateMhEsubmitProfilesTable extends Migration
 			$table->tinyInteger('revwJournalArticle');
 			$table->date('entryDate');
 			$table->tinyInteger('status');
-			// $table->foreign('companyID')->references('id')->on('mh_companies')->onDelete('cascade');
-			// $table->foreign('journalID')->references('id')->on('mh_journals')->onDelete('cascade');
+		    $table->foreign('companyID')->references('id')->on('mh_companies')->onDelete('cascade');
+			$table->foreign('journalID')->references('id')->on('mh_journals')->onDelete('cascade');
 			
 			$table->timestamps();
 		});

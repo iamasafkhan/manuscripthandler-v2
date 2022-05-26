@@ -11,17 +11,22 @@ class CreateMhJournalsTable extends Migration
 		Schema::create('mh_journals', function (Blueprint $table) {
 
 			$table->id();
+            $table->unsignedBigInteger('companyID');
 			$table->string('name');
 			$table->string('seo');
 			$table->string('journalHomePage');
 			$table->text('shortDescription');
-			$table->string('ithenticatestatus', 1)->default('A');
+			$table->text('description');
+			$table->text('spotLightDesc');
+			$table->string('ithenticatestatus')->default('A');
 			$table->tinyInteger('journalDisplayStatus');
-			$table->string('status', 1)->default('A');
+			$table->string('status')->default('A');
 			$table->string('leftimage');
 			$table->string('detailimage');
 			$table->string('bannerImage');
-			$table->timestamp('entryDate');
+			$table->datetime('entryDate');
+            $table->foreign('companyID')->references('id')->on('mh_companies')->onUpdate('cascade');
+			$table->timestamps();
 		});
 	}
 

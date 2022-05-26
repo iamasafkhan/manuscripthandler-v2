@@ -23,10 +23,10 @@ class CreateMhManuscriptHistoryTable extends Migration
             $table->string('ipAddress');
             $table->timestamp('entryDate');
 
-            // $table->foreign('userID')->references('id')->on('mh_esubmit_profiles')->onUpdate('cascade');
-            // $table->foreign('journalID')->references('id')->on('mh_journals')->onUpdate('cascade');
-            // $table->foreign('companyID')->references('id')->on('mh_companies')->onUpdate('cascade');
-            // $table->foreign('orderNumber')->references('orderNumber')->on('mh_sms_authorchecklist')->onUpdate('cascade');
+            $table->foreign('userID')->references('id')->on('mh_esubmit_profiles')->onUpdate('cascade');
+            $table->foreign('journalID')->references('id')->on('mh_journals')->onUpdate('cascade');
+            $table->foreign('companyID')->references('id')->on('mh_companies')->onUpdate('cascade');
+             $table->foreign('orderNumber')->references('orderNumber')->on('mh_sms_authorchecklist')->onUpdate('cascade');
 
             $table->timestamps();
         });

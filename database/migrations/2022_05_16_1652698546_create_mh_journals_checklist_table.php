@@ -15,7 +15,7 @@ class CreateMhJournalsChecklistTable extends Migration
             $table->text('description');
             $table->datetime('entryDate');
             $table->tinyInteger('status')->default('1');
-         //   $table->foreign('journalID')->references('id')->on('mh_journals')->onDelete('cascade');
+            $table->foreign('journalID')->references('id')->on('mh_journals')->onDelete('cascade');
             $table->timestamps();
         });
     }

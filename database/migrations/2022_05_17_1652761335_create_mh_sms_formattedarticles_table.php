@@ -23,8 +23,8 @@ class CreateMhSmsFormattedarticlesTable extends Migration
 		$table->string('orderNumber');
 
 
-       // $table->foreign('authorID')->references('id')->on('mh_esubmit_profiles')->onDelete('cascade');
-		//$table->foreign('publisherID')->references('id')->on('mh_esubmit_profiles')->onDelete('cascade');
+       $table->foreign('authorID')->references('id')->on('mh_esubmit_profiles')->onDelete('cascade');
+		$table->foreign('publisherID')->references('id')->on('mh_esubmit_profiles')->onDelete('cascade');
         $table->timestamps();
        
         });

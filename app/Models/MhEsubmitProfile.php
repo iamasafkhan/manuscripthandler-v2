@@ -3,20 +3,28 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Laravel\Sanctum\HasApiTokens;
 
-class MhEsubmitProfile extends Model
+
+class MhEsubmitProfile extends Authenticatable 
 {
-    use HasFactory;
+    use HasApiTokens, HasFactory;
 
     protected $table = 'mh_esubmit_profiles';
+    public $timestamps = false;
     protected $fillable = [
+        'journalID',
+        'companyID',
         'firstName',
         'middleName',
         'lastName',
         'prefixType',
-        'email',
-        'password',
-
+        'primaryEmailAddress',
+        'passWord',
+        'passWordVisible',
+    
     ];
+
+
 }

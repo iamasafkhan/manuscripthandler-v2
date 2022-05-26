@@ -15,13 +15,14 @@ class CreateMhSmsOrignalityreportsTable extends Migration
 		$table->unsignedBigInteger('editorialID');
 		$table->unsignedBigInteger('editorID');
 		$table->unsignedBigInteger('journalID');
+		$table->tinyText('fileAttachment');
 		$table->text('comments');
 		$table->string('orderNumber');
 		$table->datetime('entryDate');
 
-        // $table->foreign('editorialID')->references('id')->on('mh_esubmit_profiles')->onDelete('cascade');
-        // $table->foreign('editorID')->references('id')->on('mh_esubmit_profiles')->onDelete('cascade');
-        // $table->foreign('journalID')->references('id')->on('mh_journals')->onDelete('cascade');
+        $table->foreign('editorialID')->references('id')->on('mh_esubmit_profiles')->onDelete('cascade');
+        $table->foreign('editorID')->references('id')->on('mh_esubmit_profiles')->onDelete('cascade');
+        $table->foreign('journalID')->references('id')->on('mh_journals')->onDelete('cascade');
        
         $table->timestamps();
         

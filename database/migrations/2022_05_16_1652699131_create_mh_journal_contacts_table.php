@@ -14,8 +14,8 @@ class CreateMhJournalContactsTable extends Migration
             $table->unsignedBigInteger('journalID');
             $table->unsignedBigInteger('profileID');
             $table->datetime('entryDate');
-           // $table->foreign('journalID')->references('id')->on('mh_journals')->onDelete('cascade');
-           // $table->foreign('profileID')->references('id')->on('mh_esubmit_profiles')->onDelete('cascade');
+            $table->foreign('journalID')->references('id')->on('mh_journals')->onDelete('cascade');
+            $table->foreign('profileID')->references('id')->on('mh_esubmit_profiles')->onDelete('cascade');
             $table->timestamps();
         });
     }

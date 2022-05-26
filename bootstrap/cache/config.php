@@ -92,7 +92,7 @@
     'defaults' => 
     array (
       'guard' => 'web',
-      'passwords' => 'users',
+      'passwords' => 'mh_esubmit_profiles',
     ),
     'guards' => 
     array (
@@ -100,6 +100,11 @@
       array (
         'driver' => 'session',
         'provider' => 'users',
+      ),
+      'profiles' => 
+      array (
+        'driver' => 'session',
+        'provider' => 'mh_esubmit_profiles',
       ),
       'admin' => 
       array (
@@ -124,6 +129,11 @@
         'driver' => 'eloquent',
         'model' => 'App\\Models\\Admin',
       ),
+      'mh_esubmit_profiles' => 
+      array (
+        'driver' => 'eloquent',
+        'model' => 'App\\Models\\MhEsubmitProfile',
+      ),
     ),
     'passwords' => 
     array (
@@ -140,6 +150,12 @@
         'table' => 'password_resets',
         'expire' => 60,
         'throttle' => 60,
+      ),
+      'mh_esubmit_profiles' => 
+      array (
+        'provider' => 'mh_esubmit_profiles',
+        'table' => 'password_resets',
+        'expire' => 60,
       ),
     ),
     'password_timeout' => 10800,
@@ -208,7 +224,7 @@
       'file' => 
       array (
         'driver' => 'file',
-        'path' => 'C:\\xampp\\htdocs\\projects\\manuscripthandler-v2\\storage\\framework/cache/data',
+        'path' => 'C:\\wamp64\\www\\projects\\manuscripthandler-v234\\storage\\framework/cache/data',
       ),
       'memcached' => 
       array (
@@ -381,13 +397,13 @@
       'local' => 
       array (
         'driver' => 'local',
-        'root' => 'C:\\xampp\\htdocs\\projects\\manuscripthandler-v2\\storage\\app',
+        'root' => 'C:\\wamp64\\www\\projects\\manuscripthandler-v234\\storage\\app',
         'throw' => false,
       ),
       'public' => 
       array (
         'driver' => 'local',
-        'root' => 'C:\\xampp\\htdocs\\projects\\manuscripthandler-v2\\storage\\app/public',
+        'root' => 'C:\\wamp64\\www\\projects\\manuscripthandler-v234\\storage\\app/public',
         'url' => 'http://manuscripthandler.test/storage',
         'visibility' => 'public',
         'throw' => false,
@@ -407,7 +423,7 @@
     ),
     'links' => 
     array (
-      'C:\\xampp\\htdocs\\projects\\manuscripthandler-v2\\public\\storage' => 'C:\\xampp\\htdocs\\projects\\manuscripthandler-v2\\storage\\app/public',
+      'C:\\wamp64\\www\\projects\\manuscripthandler-v234\\public\\storage' => 'C:\\wamp64\\www\\projects\\manuscripthandler-v234\\storage\\app/public',
     ),
   ),
   'hashing' => 
@@ -446,13 +462,13 @@
       'single' => 
       array (
         'driver' => 'single',
-        'path' => 'C:\\xampp\\htdocs\\projects\\manuscripthandler-v2\\storage\\logs/laravel.log',
+        'path' => 'C:\\wamp64\\www\\projects\\manuscripthandler-v234\\storage\\logs/laravel.log',
         'level' => 'debug',
       ),
       'daily' => 
       array (
         'driver' => 'daily',
-        'path' => 'C:\\xampp\\htdocs\\projects\\manuscripthandler-v2\\storage\\logs/laravel.log',
+        'path' => 'C:\\wamp64\\www\\projects\\manuscripthandler-v234\\storage\\logs/laravel.log',
         'level' => 'debug',
         'days' => 14,
       ),
@@ -504,7 +520,7 @@
       ),
       'emergency' => 
       array (
-        'path' => 'C:\\xampp\\htdocs\\projects\\manuscripthandler-v2\\storage\\logs/laravel.log',
+        'path' => 'C:\\wamp64\\www\\projects\\manuscripthandler-v234\\storage\\logs/laravel.log',
       ),
     ),
   ),
@@ -579,7 +595,7 @@
       'theme' => 'default',
       'paths' => 
       array (
-        0 => 'C:\\xampp\\htdocs\\projects\\manuscripthandler-v2\\resources\\views/vendor/mail',
+        0 => 'C:\\wamp64\\www\\projects\\manuscripthandler-v234\\resources\\views/vendor/mail',
       ),
     ),
   ),
@@ -685,7 +701,7 @@
     'lifetime' => '120',
     'expire_on_close' => false,
     'encrypt' => false,
-    'files' => 'C:\\xampp\\htdocs\\projects\\manuscripthandler-v2\\storage\\framework/sessions',
+    'files' => 'C:\\wamp64\\www\\projects\\manuscripthandler-v234\\storage\\framework/sessions',
     'connection' => NULL,
     'table' => 'sessions',
     'store' => NULL,
@@ -705,14 +721,14 @@
   array (
     'paths' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\projects\\manuscripthandler-v2\\resources\\views',
+      0 => 'C:\\wamp64\\www\\projects\\manuscripthandler-v234\\resources\\views',
     ),
-    'compiled' => 'C:\\xampp\\htdocs\\projects\\manuscripthandler-v2\\storage\\framework\\views',
+    'compiled' => 'C:\\wamp64\\www\\projects\\manuscripthandler-v234\\storage\\framework\\views',
   ),
   'livewire' => 
   array (
     'class_namespace' => 'App\\Http\\Livewire',
-    'view_path' => 'C:\\xampp\\htdocs\\projects\\manuscripthandler-v2\\resources\\views/livewire',
+    'view_path' => 'C:\\wamp64\\www\\projects\\manuscripthandler-v234\\resources\\views/livewire',
     'layout' => 'layouts.app',
     'asset_url' => NULL,
     'app_url' => NULL,
@@ -819,7 +835,7 @@
     array (
     ),
     'enable_runnable_solutions' => true,
-    'remote_sites_path' => 'C:\\xampp\\htdocs\\projects\\manuscripthandler-v2',
+    'remote_sites_path' => 'C:\\wamp64\\www\\projects\\manuscripthandler-v234',
     'local_sites_path' => '',
     'housekeeping_endpoint_prefix' => '_ignition',
     'settings_file_path' => '',

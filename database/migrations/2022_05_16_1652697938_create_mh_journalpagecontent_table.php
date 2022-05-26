@@ -16,6 +16,8 @@ class CreateMhJournalpagecontentTable extends Migration
 			$table->string('page_title')->nullable();
 			$table->string('page_heading');
 			$table->string('page_subheading');
+			$table->longText('meta_keyword');
+			$table->longText('meta_phrase');
 			$table->string('page_url');
 			$table->string('page_image');
 			$table->string('page_thumbimage');
@@ -26,7 +28,7 @@ class CreateMhJournalpagecontentTable extends Migration
 			$table->integer('modified_by');
 			$table->integer('link_id');
 			$table->string('type');
-		//	$table->foreign('journalID')->references('id')->on('mh_journals')->onDelete('cascade');
+			$table->foreign('journalID')->references('id')->on('mh_journals')->onDelete('cascade');
 			$table->timestamps();
 		});
 	}

@@ -60,9 +60,9 @@
                     <li><a class="nav-link scrollto" href="#resources">Resources</a></li>
                     <li><a class="nav-link scrollto" href="#services">Services</a></li>
                     <li><a class="nav-link scrollto" href="#portfolio">News &amp; Events</a></li>
-                    <li><a class="nav-link scrollto" href="{{ route('journals-using-mh') }}">Journals using MH</a></li>
+                    <li><a class="nav-link scrollto" href="{{ route('journals-using-mh') }}">Journals Using MH</a></li>
                     <li><a class="nav-link scrollto" href="">Contact</a></li>
-                    <li><a class="getstarted scrollto" href="{{ route('login') }}">Get Started</a></li>
+                    {{-- <li><a class="getstarted scrollto" href="">Get Started</a></li> --}}
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
@@ -100,6 +100,17 @@
 
 
     <main id="main">
+        <section class="breadcrumbs">
+            <div class="container">
+    
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li>Home</li>
+                </ol>
+                <h2>Home</h2>
+    
+            </div>
+        </section>
         @yield('content')
     </main>
     <!-- End #main -->

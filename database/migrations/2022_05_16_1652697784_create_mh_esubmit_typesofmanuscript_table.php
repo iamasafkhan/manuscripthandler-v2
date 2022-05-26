@@ -15,7 +15,7 @@ class CreateMhEsubmitTypesofmanuscriptTable extends Migration
             $table->string('title');
             $table->datetime('entryDate');
             $table->tinyInteger('status');
-           // $table->foreign('journalID')->references('id')->on('mh_journals')->onDelete('cascade');
+            $table->foreign('journalID')->references('id')->on('mh_journals')->onDelete('cascade');
             $table->timestamps();
         });
     }

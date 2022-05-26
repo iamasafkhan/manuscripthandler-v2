@@ -31,8 +31,8 @@ class CreateMhSmsAuthorchecklistDataTable extends Migration
 			$table->tinyInteger('transfered');
 			$table->datetime('transferDate');
 			$table->tinyInteger('withAssociateEditor')->default('0');
-			// $table->foreign('editorID')->references('id')->on('mh_esubmit_profiles')->onDelete('cascade');
-			// $table->foreign('journalID')->references('id')->on('mh_journals')->onDelete('cascade');
+			$table->foreign('userID')->references('id')->on('mh_esubmit_profiles')->onDelete('cascade');
+			$table->foreign('journalID')->references('id')->on('mh_journals')->onDelete('cascade');
 			
 			$table->timestamps();
 		});
