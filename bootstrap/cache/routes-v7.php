@@ -24,7 +24,66 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::BH12vcHrJPFgeYMk',
+            '_route' => 'generated::yRiHnlzXiSODxhx6',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/livewire/upload-file' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'livewire.upload-file',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/livewire/livewire.js' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'generated::3Naj9X0mij0k6fGh',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/livewire/livewire.js.map' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'generated::Qg7WqY0nyJotmqku',
           ),
           1 => NULL,
           2 => 
@@ -102,7 +161,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::7wU83eGHN9XbN5XQ',
+            '_route' => 'generated::f1WQOd1d4KwEK89i',
           ),
           1 => NULL,
           2 => 
@@ -122,7 +181,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::KXYroCMjinjXAj4m',
+            '_route' => 'home',
           ),
           1 => NULL,
           2 => 
@@ -136,195 +195,13 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/login' => 
+      '/journals-using-mh' => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'login',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'generated::M2W6jC525DwPN0va',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'POST' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/logout' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'logout',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'POST' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/register' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'register',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'generated::LTx2VYHaV0vcG96g',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'POST' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/password/reset' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'password.request',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'password.update',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'POST' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/password/email' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'password.email',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'POST' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/password/confirm' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'password.confirm',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'generated::rFmRcaIC8a7W0mKI',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'POST' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/email/verify' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'verification.notice',
+            '_route' => 'journals-using-mh',
           ),
           1 => NULL,
           2 => 
@@ -338,13 +215,32 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/email/resend' => 
+      '/do-register' => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'verification.resend',
+            '_route' => 'do-register',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/do-login' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'do-login',
           ),
           1 => NULL,
           2 => 
@@ -363,7 +259,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'home',
+            '_route' => 'dashboard-home',
           ),
           1 => NULL,
           2 => 
@@ -377,49 +273,13 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/admin/login' => 
+      '/logout' => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'admin.login',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'admin.auth',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'POST' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/admin/admin.home' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'admin.home',
+            '_route' => 'do-logout',
           ),
           1 => NULL,
           2 => 
@@ -433,13 +293,13 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/admin/logout' => 
+      '/submit-new-manuscript' => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'admin.logout',
+            '_route' => 'newsubmission',
           ),
           1 => NULL,
           2 => 
@@ -456,21 +316,43 @@ app('router')->setCompiledRoutes(
     ),
     2 => 
     array (
-      0 => '{^(?|/password/reset/([^/]++)(*:31)|/email/verify/([^/]++)/([^/]++)(*:69))/?$}sDu',
+      0 => '{^(?|/livewire/(?|message/([^/]++)(*:36)|preview\\-file/([^/]++)(*:65))|/([^/]++)/([^/]++)(?|/esubmit\\-registraion(*:115)|(*:123)))/?$}sDu',
     ),
     3 => 
     array (
-      31 => 
+      36 => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'password.reset',
+            '_route' => 'livewire.message',
           ),
           1 => 
           array (
-            0 => 'token',
+            0 => 'name',
+          ),
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      65 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'livewire.preview-file',
+          ),
+          1 => 
+          array (
+            0 => 'filename',
           ),
           2 => 
           array (
@@ -483,18 +365,42 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      69 => 
+      115 => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'verification.verify',
+            '_route' => 'show_register_form',
           ),
           1 => 
           array (
-            0 => 'id',
-            1 => 'hash',
+            0 => 'companName',
+            1 => 'seo',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      123 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'login',
+          ),
+          1 => 
+          array (
+            0 => 'company',
+            1 => 'seo',
           ),
           2 => 
           array (
@@ -522,7 +428,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::BH12vcHrJPFgeYMk' => 
+    'generated::yRiHnlzXiSODxhx6' => 
     array (
       'methods' => 
       array (
@@ -543,7 +449,157 @@ app('router')->setCompiledRoutes(
         array (
           0 => 'web',
         ),
-        'as' => 'generated::BH12vcHrJPFgeYMk',
+        'as' => 'generated::yRiHnlzXiSODxhx6',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'livewire.message' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'livewire/message/{name}',
+      'action' => 
+      array (
+        'uses' => 'Livewire\\Controllers\\HttpConnectionHandler@__invoke',
+        'controller' => 'Livewire\\Controllers\\HttpConnectionHandler',
+        'as' => 'livewire.message',
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'livewire.upload-file' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'livewire/upload-file',
+      'action' => 
+      array (
+        'uses' => 'Livewire\\Controllers\\FileUploadHandler@handle',
+        'controller' => 'Livewire\\Controllers\\FileUploadHandler@handle',
+        'as' => 'livewire.upload-file',
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'livewire.preview-file' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'livewire/preview-file/{filename}',
+      'action' => 
+      array (
+        'uses' => 'Livewire\\Controllers\\FilePreviewHandler@handle',
+        'controller' => 'Livewire\\Controllers\\FilePreviewHandler@handle',
+        'as' => 'livewire.preview-file',
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'generated::3Naj9X0mij0k6fGh' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'livewire/livewire.js',
+      'action' => 
+      array (
+        'uses' => 'Livewire\\Controllers\\LivewireJavaScriptAssets@source',
+        'controller' => 'Livewire\\Controllers\\LivewireJavaScriptAssets@source',
+        'as' => 'generated::3Naj9X0mij0k6fGh',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'generated::Qg7WqY0nyJotmqku' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'livewire/livewire.js.map',
+      'action' => 
+      array (
+        'uses' => 'Livewire\\Controllers\\LivewireJavaScriptAssets@maps',
+        'controller' => 'Livewire\\Controllers\\LivewireJavaScriptAssets@maps',
+        'as' => 'generated::Qg7WqY0nyJotmqku',
       ),
       'fallback' => false,
       'defaults' => 
@@ -668,7 +724,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::7wU83eGHN9XbN5XQ' => 
+    'generated::f1WQOd1d4KwEK89i' => 
     array (
       'methods' => 
       array (
@@ -683,564 +739,15 @@ app('router')->setCompiledRoutes(
           0 => 'api',
           1 => 'auth:sanctum',
         ),
-        'uses' => 'O:47:"Laravel\\SerializableClosure\\SerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Signed":2:{s:12:"serializable";s:297:"O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:79:"function (\\Illuminate\\Http\\Request $request) {
+        'uses' => 'O:47:"Laravel\\SerializableClosure\\SerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Signed":2:{s:12:"serializable";s:295:"O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:77:"function (\\Illuminate\\Http\\Request $request) {
     return $request->user();
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000068f292240000000077d831de";}";s:4:"hash";s:44:"hi/gBYM+xvuWvM9ieu1T1cEGwaqM/Y23eTBdPV8g0LE=";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"000000006151ca18000000005491a5b1";}";s:4:"hash";s:44:"gQpC2D57EctMig/VQyAvx8s6nIjEgHz9TCIwdPZHMF4=";}}',
         'namespace' => NULL,
         'prefix' => 'api',
         'where' => 
         array (
         ),
-        'as' => 'generated::7wU83eGHN9XbN5XQ',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'generated::KXYroCMjinjXAj4m' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => '/',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-        ),
-        'uses' => 'O:47:"Laravel\\SerializableClosure\\SerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Signed":2:{s:12:"serializable";s:264:"O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:46:"function () {
-    return \\view(\'welcome\');
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000068f292260000000077d831de";}";s:4:"hash";s:44:"/YS2lo7g4OhSwSarb0jEcARqGK+K5L4OHAWwXlfU2rc=";}}',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'generated::KXYroCMjinjXAj4m',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'login' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'login',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-        ),
-        'uses' => 'App\\Http\\Controllers\\Auth\\LoginController@showLoginForm',
-        'controller' => 'App\\Http\\Controllers\\Auth\\LoginController@showLoginForm',
-        'namespace' => 'App\\Http\\Controllers',
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'login',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'generated::M2W6jC525DwPN0va' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'POST',
-      ),
-      'uri' => 'login',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-        ),
-        'uses' => 'App\\Http\\Controllers\\Auth\\LoginController@login',
-        'controller' => 'App\\Http\\Controllers\\Auth\\LoginController@login',
-        'namespace' => 'App\\Http\\Controllers',
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'generated::M2W6jC525DwPN0va',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'logout' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'POST',
-      ),
-      'uri' => 'logout',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-        ),
-        'uses' => 'App\\Http\\Controllers\\Auth\\LoginController@logout',
-        'controller' => 'App\\Http\\Controllers\\Auth\\LoginController@logout',
-        'namespace' => 'App\\Http\\Controllers',
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'logout',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'register' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'register',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-        ),
-        'uses' => 'App\\Http\\Controllers\\Auth\\RegisterController@showRegistrationForm',
-        'controller' => 'App\\Http\\Controllers\\Auth\\RegisterController@showRegistrationForm',
-        'namespace' => 'App\\Http\\Controllers',
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'register',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'generated::LTx2VYHaV0vcG96g' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'POST',
-      ),
-      'uri' => 'register',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-        ),
-        'uses' => 'App\\Http\\Controllers\\Auth\\RegisterController@register',
-        'controller' => 'App\\Http\\Controllers\\Auth\\RegisterController@register',
-        'namespace' => 'App\\Http\\Controllers',
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'generated::LTx2VYHaV0vcG96g',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'password.request' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'password/reset',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-        ),
-        'uses' => 'App\\Http\\Controllers\\Auth\\ForgotPasswordController@showLinkRequestForm',
-        'controller' => 'App\\Http\\Controllers\\Auth\\ForgotPasswordController@showLinkRequestForm',
-        'namespace' => 'App\\Http\\Controllers',
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'password.request',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'password.email' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'POST',
-      ),
-      'uri' => 'password/email',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-        ),
-        'uses' => 'App\\Http\\Controllers\\Auth\\ForgotPasswordController@sendResetLinkEmail',
-        'controller' => 'App\\Http\\Controllers\\Auth\\ForgotPasswordController@sendResetLinkEmail',
-        'namespace' => 'App\\Http\\Controllers',
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'password.email',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'password.reset' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'password/reset/{token}',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-        ),
-        'uses' => 'App\\Http\\Controllers\\Auth\\ResetPasswordController@showResetForm',
-        'controller' => 'App\\Http\\Controllers\\Auth\\ResetPasswordController@showResetForm',
-        'namespace' => 'App\\Http\\Controllers',
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'password.reset',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'password.update' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'POST',
-      ),
-      'uri' => 'password/reset',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-        ),
-        'uses' => 'App\\Http\\Controllers\\Auth\\ResetPasswordController@reset',
-        'controller' => 'App\\Http\\Controllers\\Auth\\ResetPasswordController@reset',
-        'namespace' => 'App\\Http\\Controllers',
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'password.update',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'password.confirm' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'password/confirm',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-        ),
-        'uses' => 'App\\Http\\Controllers\\Auth\\ConfirmPasswordController@showConfirmForm',
-        'controller' => 'App\\Http\\Controllers\\Auth\\ConfirmPasswordController@showConfirmForm',
-        'namespace' => 'App\\Http\\Controllers',
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'password.confirm',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'generated::rFmRcaIC8a7W0mKI' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'POST',
-      ),
-      'uri' => 'password/confirm',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-        ),
-        'uses' => 'App\\Http\\Controllers\\Auth\\ConfirmPasswordController@confirm',
-        'controller' => 'App\\Http\\Controllers\\Auth\\ConfirmPasswordController@confirm',
-        'namespace' => 'App\\Http\\Controllers',
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'generated::rFmRcaIC8a7W0mKI',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'verification.notice' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'email/verify',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-        ),
-        'uses' => 'App\\Http\\Controllers\\Auth\\VerificationController@show',
-        'controller' => 'App\\Http\\Controllers\\Auth\\VerificationController@show',
-        'namespace' => 'App\\Http\\Controllers',
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'verification.notice',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'verification.verify' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'email/verify/{id}/{hash}',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-        ),
-        'uses' => 'App\\Http\\Controllers\\Auth\\VerificationController@verify',
-        'controller' => 'App\\Http\\Controllers\\Auth\\VerificationController@verify',
-        'namespace' => 'App\\Http\\Controllers',
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'verification.verify',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'verification.resend' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'POST',
-      ),
-      'uri' => 'email/resend',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-        ),
-        'uses' => 'App\\Http\\Controllers\\Auth\\VerificationController@resend',
-        'controller' => 'App\\Http\\Controllers\\Auth\\VerificationController@resend',
-        'namespace' => 'App\\Http\\Controllers',
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'verification.resend',
+        'as' => 'generated::f1WQOd1d4KwEK89i',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1263,15 +770,15 @@ app('router')->setCompiledRoutes(
         0 => 'GET',
         1 => 'HEAD',
       ),
-      'uri' => 'home',
+      'uri' => '/',
       'action' => 
       array (
         'middleware' => 
         array (
           0 => 'web',
         ),
-        'uses' => 'App\\Http\\Controllers\\HomeController@index',
-        'controller' => 'App\\Http\\Controllers\\HomeController@index',
+        'uses' => 'App\\Http\\Controllers\\frontend\\HomeController@index',
+        'controller' => 'App\\Http\\Controllers\\frontend\\HomeController@index',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -1293,41 +800,32 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'admin.login' => 
+    'journals-using-mh' => 
     array (
       'methods' => 
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
-      'uri' => 'admin/login',
+      'uri' => 'journals-using-mh',
       'action' => 
       array (
         'middleware' => 
         array (
           0 => 'web',
-          1 => 'admin.guest',
         ),
-        'uses' => '\\Illuminate\\Routing\\ViewController@__invoke',
-        'controller' => '\\Illuminate\\Routing\\ViewController',
+        'uses' => 'App\\Http\\Controllers\\frontend\\JournalsUsingMhController@index',
+        'controller' => 'App\\Http\\Controllers\\frontend\\JournalsUsingMhController@index',
         'namespace' => NULL,
-        'prefix' => '/admin',
+        'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'admin.login',
+        'as' => 'journals-using-mh',
       ),
       'fallback' => false,
       'defaults' => 
       array (
-        'view' => 'admin.login',
-        'data' => 
-        array (
-        ),
-        'status' => 200,
-        'headers' => 
-        array (
-        ),
       ),
       'wheres' => 
       array (
@@ -1339,28 +837,64 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'admin.auth' => 
+    'show_register_form' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => '{companName}/{seo}/esubmit-registraion',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\frontend\\LoginController@show_register_form',
+        'controller' => 'App\\Http\\Controllers\\frontend\\LoginController@show_register_form',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'show_register_form',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'do-register' => 
     array (
       'methods' => 
       array (
         0 => 'POST',
       ),
-      'uri' => 'admin/login',
+      'uri' => 'do-register',
       'action' => 
       array (
         'middleware' => 
         array (
           0 => 'web',
-          1 => 'admin.guest',
         ),
-        'uses' => 'App\\Http\\Controllers\\AdminController@login',
-        'controller' => 'App\\Http\\Controllers\\AdminController@login',
+        'uses' => 'App\\Http\\Controllers\\frontend\\LoginController@register',
+        'controller' => 'App\\Http\\Controllers\\frontend\\LoginController@register',
         'namespace' => NULL,
-        'prefix' => '/admin',
+        'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'admin.auth',
+        'as' => 'do-register',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1376,29 +910,28 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'admin.home' => 
+    'login' => 
     array (
       'methods' => 
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
-      'uri' => 'admin/admin.home',
+      'uri' => '{company}/{seo}',
       'action' => 
       array (
         'middleware' => 
         array (
           0 => 'web',
-          1 => 'admin.auth',
         ),
-        'uses' => 'App\\Http\\Controllers\\AdminController@adminhome',
-        'controller' => 'App\\Http\\Controllers\\AdminController@adminhome',
+        'uses' => 'App\\Http\\Controllers\\frontend\\LoginController@show_login',
+        'controller' => 'App\\Http\\Controllers\\frontend\\LoginController@show_login',
         'namespace' => NULL,
-        'prefix' => '/admin',
+        'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'admin.home',
+        'as' => 'login',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1414,28 +947,138 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'admin.logout' => 
+    'do-login' => 
     array (
       'methods' => 
       array (
-        0 => 'GET',
-        1 => 'HEAD',
+        0 => 'POST',
       ),
-      'uri' => 'admin/logout',
+      'uri' => 'do-login',
       'action' => 
       array (
         'middleware' => 
         array (
           0 => 'web',
         ),
-        'uses' => 'App\\Http\\Controllers\\AdminController@logout',
-        'controller' => 'App\\Http\\Controllers\\AdminController@logout',
+        'uses' => 'App\\Http\\Controllers\\frontend\\LoginController@login',
+        'controller' => 'App\\Http\\Controllers\\frontend\\LoginController@login',
         'namespace' => NULL,
-        'prefix' => '/admin',
+        'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'admin.logout',
+        'as' => 'do-login',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'dashboard-home' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'home',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\frontend\\FrontendDashboardController@index',
+        'controller' => 'App\\Http\\Controllers\\frontend\\FrontendDashboardController@index',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'dashboard-home',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'do-logout' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'logout',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\frontend\\LoginController@logout',
+        'controller' => 'App\\Http\\Controllers\\frontend\\LoginController@logout',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'do-logout',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'newsubmission' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'submit-new-manuscript',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\frontend\\NewSubmissionsController@index',
+        'controller' => 'App\\Http\\Controllers\\frontend\\NewSubmissionsController@index',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'newsubmission',
       ),
       'fallback' => false,
       'defaults' => 

@@ -14,8 +14,8 @@ return [
     */
 
     'defaults' => [
-        'guard' => 'web',
-        'passwords' => 'users',
+        'guard' => 'profiles',
+        'passwords' => 'mh_esubmit_profiles',
     ],
 
     /*
@@ -36,14 +36,22 @@ return [
     */
 
     'guards' => [
+        
         'web' => [
             'driver' => 'session',
             'provider' => 'users',
         ],
+
+        'profiles' => [
+            'driver' => 'session',
+            'provider' => 'mh_esubmit_profiles',
+        ],
+
         'admin' => [
             'driver' => 'session',
             'provider' => 'admins',
         ],
+
     ],
 
     /*
@@ -74,7 +82,12 @@ return [
             'driver' => 'eloquent',
             'model' => App\Models\Admin::class,
         ],
-
+       
+        'profiles' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\MhEsubmitProfile::class,
+             
+        ]
 
         // 'users' => [
         //     'driver' => 'database',
@@ -109,6 +122,12 @@ return [
             'table' => 'password_resets',
             'expire' => 60,
             'throttle' => 60,
+        ],
+
+        'profiles' => [
+            'provider' => 'profiles',
+            'table' => 'password_resets',
+            'expire' => 60,
         ],
     ],
 
