@@ -24,10 +24,12 @@ Route::get('/{company}/{seo}', [App\Http\Controllers\frontend\LoginController::c
 Route::post('/do-login', [App\Http\Controllers\frontend\LoginController::class, 'login'])->name('do-login');
 
 // Route::middleware('auth')->group(function(){
-
    Route::get('/home', [App\Http\Controllers\frontend\FrontendDashboardController::class, 'index'])->name('dashboard-home');
+   Route::get('/logout', [App\Http\Controllers\frontend\LoginController::class, 'logout'])->name('do-logout');
+   Route::get('/submit-new-manuscript', [\App\Http\Controllers\frontend\NewSubmissionsController::class, 'index'])->name('newsubmission');
 
 // });
+
 // Route::get('/submit-online', [\App\Http\Controllers\frontend\JournalsUsingMhController::class, 'submit_online'])->name('submit-online');
 
 

@@ -14,7 +14,7 @@ return [
     */
 
     'defaults' => [
-        'guard' => 'web',
+        'guard' => 'profiles',
         'passwords' => 'mh_esubmit_profiles',
     ],
 
@@ -83,7 +83,7 @@ return [
             'model' => App\Models\Admin::class,
         ],
        
-        'mh_esubmit_profiles' => [
+        'profiles' => [
             'driver' => 'eloquent',
             'model' => App\Models\MhEsubmitProfile::class,
              
@@ -124,8 +124,8 @@ return [
             'throttle' => 60,
         ],
 
-        'mh_esubmit_profiles' => [
-            'provider' => 'mh_esubmit_profiles',
+        'profiles' => [
+            'provider' => 'profiles',
             'table' => 'password_resets',
             'expire' => 60,
         ],

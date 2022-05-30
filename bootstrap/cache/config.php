@@ -91,7 +91,7 @@
   array (
     'defaults' => 
     array (
-      'guard' => 'web',
+      'guard' => 'profiles',
       'passwords' => 'mh_esubmit_profiles',
     ),
     'guards' => 
@@ -129,7 +129,7 @@
         'driver' => 'eloquent',
         'model' => 'App\\Models\\Admin',
       ),
-      'mh_esubmit_profiles' => 
+      'profiles' => 
       array (
         'driver' => 'eloquent',
         'model' => 'App\\Models\\MhEsubmitProfile',
@@ -151,9 +151,9 @@
         'expire' => 60,
         'throttle' => 60,
       ),
-      'mh_esubmit_profiles' => 
+      'profiles' => 
       array (
-        'provider' => 'mh_esubmit_profiles',
+        'provider' => 'profiles',
         'table' => 'password_resets',
         'expire' => 60,
       ),

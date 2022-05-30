@@ -74,20 +74,18 @@ class LoginController extends Controller
 
     public function show_login($company, $seo)
     {
-        //dd($company);
-        //dd($seo);
-        $profiles =  MhEsubmitProfile::all()->first();
+ 
          
-        $companies = MhCompanies::where('companySEOURL', $company)->first();
-        $seos = MhJournals::where('seo', $seo)->first();
+        $company = MhCompanies::where('companySEOURL', $company)->first();
+        $journal = MhJournals::where('seo', $seo)->first();
 
-
-        return view('frontend.login', compact('companies', 'seos', 'profiles'));
+        return view('frontend.login', compact('company', 'journal'));
     }
 
 
     public function login()
     {
+        //dd(request());
         request()->validate([
             'primaryEmailAddress' => 'required|email',
             'passWord' => 'required'
@@ -101,28 +99,29 @@ class LoginController extends Controller
         $journalID = request('journalID');
         $companyID = request('companyID');
 
+        $user = MhEsubmitProfile::where('primaryEmailAddress', $email)
+        ->where('journalID', $journalID)
+        ->where('companyID', $companyID)
+        ->first();
 
-        $user = MhEsubmitProfile::where('primaryEmailAddress', $email)->where('journalID', $journalID)->where('companyID', $companyID)->first();
-
+        //dd($user);
         if (!$user) {
-
-            return redirect()->back()->with(['message' => 'Email not found in our system.']);
+            return redirect()->back()->with(['message' => 'Invalid authentication informaiton. Please check your email address and try again with correct information or to obtain your correct password, please click on “Forgot Password.']);
         }
 
         if (!Hash::check($password, $user->passWord)) {
-
             return redirect()->back()->with(['message' => 'Your password is incorrect.']);
         }
 
-
-        // if (Hash::check($journalID, $user->journalID)) {
+        if($user->journalID == $journalID && $user->companyID == $companyID) {
              
             auth('profiles')->login($user);
-            return redirect()->route('dashboard-home');
+             
+            return redirect()->route('journals-using-mh');
 
-        // } else {
-        //     return redirect()->route('home');
-        // }
+        } else {
+            return redirect()->route('journals-using-mh')->with(['message' => 'Your selection is incorrect.']);
+        }
     }
 
 
@@ -132,6 +131,6 @@ class LoginController extends Controller
         session()->invalidate();
 
 
-        return redirect()->route('login');
+        return redirect()->route('journals-using-mh');
     }
 }

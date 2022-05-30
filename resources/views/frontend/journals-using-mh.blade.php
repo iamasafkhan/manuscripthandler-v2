@@ -1,11 +1,11 @@
 @extends('layouts.base')
 @section('title', 'Journals Using Mh')
 @section('content')
+<link rel="stylesheet" href="https://cdn.datatables.net/1.12.0/css/jquery.dataTables.min.css" />
 
-    <section>
+     <section>
         <div class="container">
             <div class="row">
-
                 @if (Session::has('message'))
                     <div class="alert alert-danger" role="alert">{{ Session::get('message') }}</div>
                 @endif
@@ -13,10 +13,9 @@
                     <h4><b>Journals Using MH</b></h4>
                 </div>
                 <div class="col-md-12">
-                    <table class="table table-striped table-bordered">
+                    <table id="journal" class="table table-striped table-bordered">
                         <thead class="thead-dark">
                             <tr>
-
                                 <th>S.no</th>
                                 <th>Journal Name</th>
                                 <th>Submit Online</th>
@@ -33,7 +32,7 @@
                                             Online</a>
                                     </td>
                                     {{-- ['company'=>$journal->companyName, 'seo'=>$journal->seo] --}}
-                                    <td style="border-bottom:#CCC solid 1px;">
+                                     <td style="border-bottom:#CCC solid 1px;">
                                         <a href="#">View Home Page</a>
                                     </td>
                                 </tr>
@@ -42,7 +41,18 @@
 
                     </table>
                 </div>
-            </div>
+            </div> 
         </div>
     </section>
+
+
+    <script type="text/javascript" src="//cdn.datatables.net/1.12.0/js/jquery.dataTables.min.js">
+
+    </script>
+    
+    <script>
+        $(document).ready(function() {
+            $('#journal').DataTable();
+        });
+    </script>
 @endsection

@@ -6,33 +6,27 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <title>
-
         @yield('title')
     </title>
-
     <meta content="" name="description">
-
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="/assets/img/favicon.png" rel="icon">
-    <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     <!-- Vendor CSS Files -->
-    <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="/assets/vendor/toastr/toastr.min.css" rel="stylesheet">
-    <link href="/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
     <!-- Template Main CSS File -->
-    <link href="/assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
 
     <!-- =======================================================
   * Template Name: FlexStart - v1.9.0
@@ -40,11 +34,6 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
 </head>
 
 <body>
@@ -67,6 +56,40 @@
                     <li><a class="nav-link scrollto" href="#portfolio">News &amp; Events</a></li>
                     <li><a class="nav-link scrollto" href="{{ route('journals-using-mh') }}">Journals Using MH</a></li>
                     <li><a class="nav-link scrollto" href="">Contact</a></li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle waves-effect waves-dark" href="#" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <i class="bi bi-person-circle bi-9x" style="font-size:40px;"></i>
+                
+                            {{-- <img src="" alt="user" width="30" class="profile-pic rounded-circle" /> --}}
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end user-dd animated flipInY">
+                            <div class="d-flex no-block align-items-center p-3 bg-info text-white mb-2">
+                                <div class=""> 
+                                       <i class="bi bi-person-circle bi-9x" style="font-size:40px;"></i>
+                                 </div>
+                                <div class="ms-2">
+                                     
+                                    <h4 class="mb-0 text-white"></h4>
+                                    <p class=" mb-0">test@test.com</p>
+                                </div>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item pt-0 pb-0" href="#"> My Profile</a>
+
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item pt-0 pb-0" href="#">Account Setting</a>
+                            <div class="dropdown-divider"></div>
+                    
+                            <a class="dropdown-item pt-0 pb-0"  href="{{ route('do-logout') }}"> Logout</a>
+
+
+                                    
+
+                            
+                        </div>
+                    </li>
                     {{-- <li><a class="getstarted scrollto" href="">Get Started</a></li> --}}
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
@@ -75,48 +98,13 @@
         </div>
     </header><!-- End Header -->
 
-    <!-- ======= Hero Section ======= -->
-    {{-- <section id="hero" class="hero d-flex align-items-center">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 d-flex flex-column justify-content-center">
-                    <h1 data-aos="fade-up">We offer modern solutions for growing your business</h1>
-                    <h2 data-aos="fade-up" data-aos-delay="400">Manuscript Handler (MH), a registered trademark,
-                        provides highly professional and economical workstation for publishers and individual journals.
-                    </h2>
-                    <div data-aos="fade-up" data-aos-delay="600">
-                        <div class="text-center text-lg-start">
-                            <a href="#about"
-                                class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
-                                <span>Get Started</span>
-                                <i class="bi bi-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
-                    <img src="assets/img/hero-img.png" class="img-fluid" alt="">
-                </div>
-            </div>
-        </div>
-
-    </section><!-- End Hero --> --}}
-
+    <!-- End Header -->
 
     <main id="main">
-        <section class="breadcrumbs">
-            <div class="container">
 
-                <ol>
-                    <li><a href="index.html">Home</a></li>
-                    <li>Home</li>
-                </ol>
-                <h2>Home</h2>
+        <!-- ======= Breadcrumbs ======= -->
+      @yield('content')
 
-            </div>
-        </section>
-        @yield('content')
     </main>
     <!-- End #main -->
 
@@ -147,8 +135,7 @@
                             <img src="assets/img/logo.png" alt="">
                             <span>FlexStart</span>
                         </a>
-                        <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita
-                            valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+                        <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
                         <div class="social-links mt-3">
                             <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
                             <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -182,9 +169,7 @@
                     <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
                         <h4>Contact Us</h4>
                         <p>
-                            A108 Adam Street <br>
-                            New York, NY 535022<br>
-                            United States <br><br>
+                            A108 Adam Street <br> New York, NY 535022<br> United States <br><br>
                             <strong>Phone:</strong> +1 5589 55488 55<br>
                             <strong>Email:</strong> info@example.com<br>
                         </p>
@@ -207,24 +192,24 @@
                 Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
             </div>
         </div>
-    </footer><!-- End Footer -->
+    </footer>
+    <!-- End Footer -->
 
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
-    <script src="/assets/vendor/purecounter/purecounter.js"></script>
-    <script src="/assets/vendor/aos/aos.js"></script>
-    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="/assets/vendor/toastr/toastr.min.js"></script>
-    <script src="/assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
 
     <!-- Template Main JS File -->
-    <script src="/assets/js/main.js"></script>
-    @yield('scripts')
+    <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
+

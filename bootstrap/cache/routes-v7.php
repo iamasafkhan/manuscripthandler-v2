@@ -24,7 +24,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::ApRwKIT2iFa6CME2',
+            '_route' => 'generated::yRiHnlzXiSODxhx6',
           ),
           1 => NULL,
           2 => 
@@ -63,7 +63,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::B2vl5fEtp2EW6mtV',
+            '_route' => 'generated::3Naj9X0mij0k6fGh',
           ),
           1 => NULL,
           2 => 
@@ -83,7 +83,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::2VGRLpfSD7VDbpwU',
+            '_route' => 'generated::Qg7WqY0nyJotmqku',
           ),
           1 => NULL,
           2 => 
@@ -161,7 +161,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::ndDVTrGhl6ZNXkme',
+            '_route' => 'generated::f1WQOd1d4KwEK89i',
           ),
           1 => NULL,
           2 => 
@@ -260,6 +260,46 @@ app('router')->setCompiledRoutes(
           0 => 
           array (
             '_route' => 'dashboard-home',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/logout' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'do-logout',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/submit-new-manuscript' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'newsubmission',
           ),
           1 => NULL,
           2 => 
@@ -388,7 +428,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::ApRwKIT2iFa6CME2' => 
+    'generated::yRiHnlzXiSODxhx6' => 
     array (
       'methods' => 
       array (
@@ -409,7 +449,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 'web',
         ),
-        'as' => 'generated::ApRwKIT2iFa6CME2',
+        'as' => 'generated::yRiHnlzXiSODxhx6',
       ),
       'fallback' => false,
       'defaults' => 
@@ -519,7 +559,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::B2vl5fEtp2EW6mtV' => 
+    'generated::3Naj9X0mij0k6fGh' => 
     array (
       'methods' => 
       array (
@@ -531,7 +571,7 @@ app('router')->setCompiledRoutes(
       array (
         'uses' => 'Livewire\\Controllers\\LivewireJavaScriptAssets@source',
         'controller' => 'Livewire\\Controllers\\LivewireJavaScriptAssets@source',
-        'as' => 'generated::B2vl5fEtp2EW6mtV',
+        'as' => 'generated::3Naj9X0mij0k6fGh',
       ),
       'fallback' => false,
       'defaults' => 
@@ -547,7 +587,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::2VGRLpfSD7VDbpwU' => 
+    'generated::Qg7WqY0nyJotmqku' => 
     array (
       'methods' => 
       array (
@@ -559,7 +599,7 @@ app('router')->setCompiledRoutes(
       array (
         'uses' => 'Livewire\\Controllers\\LivewireJavaScriptAssets@maps',
         'controller' => 'Livewire\\Controllers\\LivewireJavaScriptAssets@maps',
-        'as' => 'generated::2VGRLpfSD7VDbpwU',
+        'as' => 'generated::Qg7WqY0nyJotmqku',
       ),
       'fallback' => false,
       'defaults' => 
@@ -684,7 +724,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::ndDVTrGhl6ZNXkme' => 
+    'generated::f1WQOd1d4KwEK89i' => 
     array (
       'methods' => 
       array (
@@ -701,13 +741,13 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:47:"Laravel\\SerializableClosure\\SerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Signed":2:{s:12:"serializable";s:295:"O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:77:"function (\\Illuminate\\Http\\Request $request) {
     return $request->user();
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000018dd8f9d0000000003301114";}";s:4:"hash";s:44:"O/VLdHMPzrqqNYTwr++bo0oszh3EL2CEDNfJjt694Ho=";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"000000006151ca18000000005491a5b1";}";s:4:"hash";s:44:"gQpC2D57EctMig/VQyAvx8s6nIjEgHz9TCIwdPZHMF4=";}}',
         'namespace' => NULL,
         'prefix' => 'api',
         'where' => 
         array (
         ),
-        'as' => 'generated::ndDVTrGhl6ZNXkme',
+        'as' => 'generated::f1WQOd1d4KwEK89i',
       ),
       'fallback' => false,
       'defaults' => 
@@ -965,6 +1005,80 @@ app('router')->setCompiledRoutes(
         array (
         ),
         'as' => 'dashboard-home',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'do-logout' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'logout',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\frontend\\LoginController@logout',
+        'controller' => 'App\\Http\\Controllers\\frontend\\LoginController@logout',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'do-logout',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'newsubmission' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'submit-new-manuscript',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\frontend\\NewSubmissionsController@index',
+        'controller' => 'App\\Http\\Controllers\\frontend\\NewSubmissionsController@index',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'newsubmission',
       ),
       'fallback' => false,
       'defaults' => 

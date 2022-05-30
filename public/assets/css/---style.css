@@ -785,7 +785,7 @@ section {
 .services .service-box.pink:hover {
   background: #f51f9c;
 }
-.services .service-box:hover h3, .services .service-box:hover p, .services .service-box:hover a, .services .service-box:hover .read-more {
+.services .service-box:hover h3, .services .service-box:hover p, .services .service-box:hover .read-more {
   color: #fff;
 }
 .services .service-box:hover .icon {
@@ -2033,49 +2033,4 @@ section {
   text-align: center;
   font-size: 13px;
   color: #012970;
-}
-
-/* Dashboard */
-.dashboard-ul-list {
-  padding-left: 0px;
-}
-.dashboard-ul-list li {
-  list-style: none !important;
-  text-align: left !important;
-  line-height: 28px;
-  border-bottom: 1px #d0d4fc solid;
-  padding: 10px 0px;
-}
-
-.dashboard .dashboard-top .dashboard-links {
-  margin-bottom: 30px;
-}
-.dashboard .dashboard-top .dashboard-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.dashboard .dashboard-top .dashboard-links ul i {
-  padding-right: 2px;
-  color: #d0d4fc;
-  font-size: 12px;
-  line-height: 0;
-}
-.dashboard .dashboard-top .dashboard-links ul li {
-  padding: 10px 0;
-  display: flex;
-  align-items: center;
-
-}
-.dashboard .dashboard-top .dashboard-links ul li:first-child {
-  padding-top: 0;
-}
-.dashboard .dashboard-top .dashboard-links ul a {
-  color: #013289;
-  transition: 0.3s;
-  display: inline-block;
-  line-height: 1;
-}
-.dashboard .dashboard-top .dashboard-links ul a:hover {
-  color: #4154f1;
 }
